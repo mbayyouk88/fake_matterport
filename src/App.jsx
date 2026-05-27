@@ -697,7 +697,7 @@ function ImprovementsTab({ observations }) {
   const [form, setForm] = useState({constructType:'',quality:'',condition:'',yearBuilt:'',stories:'',gla:'',totalRooms:'',bed:'',bath:'',halfBath:'',foundation:'',basementFin:'',roofMat:'',roofCond:'',extWalls:'',hvac:'',interiorFinish:'',adverseItems:[],adverseNotes:'',description:''});
   const [saved,setSaved]=useState(false);
   const u=(k,v)=>{setForm(f=>({...f,[k]:v}));setSaved(false);};
-  const toggleAdv=(v)=>{setForm(f=>({...f,adverseItems:f.adverseItems.includes(v)?f.adverseItems.filter(x=>x!==v):[...f.adverseItems,v]});setSaved(false);};
+  const toggleAdv=(v)=>{setForm(f=>({...f,adverseItems:f.adverseItems.includes(v)?f.adverseItems.filter(x=>x!==v):[...f.adverseItems,v]}));setSaved(false);};
 
   const adverseOpts=['Foundation Cracks','Water Damage / Staining','Mold / Mildew','Roof Damage','Deferred Maintenance','Pest Infestation','Structural Issues','Electrical Hazards','Plumbing Issues','Code Violations'];
   const qualityOpts=['Q1 - Exceptional','Q2 - Excellent','Q3 - Good','Q4 - Average','Q5 - Fair','Q6 - Low'];
