@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 
-const { useState, useRef } = React;
-
 const SCALE_FT = 0.05;
 
 const PROPERTY = {
