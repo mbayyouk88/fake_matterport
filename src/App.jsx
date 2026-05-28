@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 
-const { useState } = React;
-
 const MATTERPORT_URL = "https://my.matterport.com/show/?m=UDw2UanapEg&play=1&qs=1&brand=0";
 
 const initialSite = {
